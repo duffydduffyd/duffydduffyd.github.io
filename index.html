@@ -1,9 +1,84 @@
+<!--   Created by Denise Duffy Nov 3, 2016-->
+<!--   Used the following as references: http://www.nutritioned.org/state-requirements.html -->
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-</head>
+	<title>Apply</title>
+	</head>
 <body>
+<form name="Coach Application" action="https://httpbin.org/post" method="post">
+  <fieldset>
+    <div>
+      <label>Full name:</label>
+      <input type="text" name="fullname">
+    </div>
 
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email">
+    </div>
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email">
+    </div>
+    	<div>
+      <label>Email:</label>
+      <input type="email" name="email">
+    </div>
+
+
+		<div>
+      <label>Qualification:</label>
+      <select name="careertype">
+        <option value="career">Registered Dietician</option>
+        <option value="career">Dietician Technician Registered</option>
+        <option value="career">Licensed Nutritionist</option>
+        <option value="career">Nutritionist</option>
+        <option value="career">Sports Nutritionist</option>
+        <option value="career">Health Coach</option>
+        <option value="career">Clinical Dietitian</option>
+        <option value="career">Holistic Nutritionist</option>
+      </select>
+    </div>
+    <div>
+    	  <input type="radio" name="degree" value="masters"> masters<br>
+  			<input type="radio" name="degree" value="bachelors"> bachelors<br>
+  			<input type="radio" name="degree" value="certificate"> certificate<br>
+    </div>
+
+
+  </fieldset>
+
+  <fieldset>
+    <div>
+	  	<textarea name="whycoach" rows="30" cols="200">Tell us why would you like to be a Food Feedback Coach?</textarea>
+	  </div>
+
+	  <div>
+	  	<textarea name="pastexperience" rows="30" cols="200">What in your past experience should inspire us to hire you?</textarea>
+	  </div>
+       <div>
+      <label>Choose a date you can start:</label>
+      <input type="date" name="date">
+    </div>
+    <div>
+    	<citizen>Are you authorized to work in the US?</citizen><br>
+      	<input type="radio" name="us-work" value="no"> no<br>
+  			<input type="radio" name="us-work" value="yes"> yes<br>
+    </div>
+    <div>
+      	<STRONG>Have you been convicted of a felony?</STRONG>
+      	<input type="radio" name="felony" value="no"> no<br>
+  			<input type="radio" name="felony" value="yes"> yes<br>
+    </div>
+    <div>
+      <input type="checkbox" name="cb-agree" value="agree">
+      I am prepared to lead this adventure.
+    </div>
+  </fieldset>
+
+  <button type="submit">Save this adventure</button>
+
+</form>
 </body>
 </html>
