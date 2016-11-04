@@ -10,6 +10,10 @@
 	<header>
 		<img src="images/Cover.png" alt="Cover Image"> 
 	</header>
+	<div>
+		<A HREF="about.html">Go to the About Page</A>
+	</div>
+
 	<h1>
 		Apply to be a Food Feedbacker, a Food Feedback Pro Coach
 	</h1>
@@ -24,20 +28,91 @@
 		      <label>Full name:</label>
 		      <input type="text" name="fullname">
 		    </div>
-		
 		    <div>
 		      <label>Email:</label>
 		      <input type="email" name="email">
 		    </div>
 		    <div>
-		      <label>Address:</label>
-		      <input type="text" name="address">
+		      <label>Street Address:</label>
+		      <input type="text" name="street">
+		    </div>
+		    <div>
+		      <label>City:</label>
+		      <input type="text" name="city">
+		    </div>
+		    <div>
+		      <label>State:</label>
+		      	<select name="State">
+		      		<option value="AL">Alabama</option>
+							<option value="AK">Alaska</option>
+							<option value="AZ">Arizona</option>
+							<option value="AR">Arkansas</option>
+							<option value="CA">California</option>
+							<option value="CO">Colorado</option>
+							<option value="CT">Connecticut</option>
+							<option value="DE">Delaware</option>
+							<option value="DC">District Of Columbia</option>
+							<option value="FL">Florida</option>
+							<option value="GA">Georgia</option>
+							<option value="HI">Hawaii</option>
+							<option value="ID">Idaho</option>
+							<option value="IL">Illinois</option>
+							<option value="IN">Indiana</option>
+							<option value="IA">Iowa</option>
+							<option value="KS">Kansas</option>
+							<option value="KY">Kentucky</option>
+							<option value="LA">Louisiana</option>
+							<option value="ME">Maine</option>
+							<option value="MD">Maryland</option>
+							<option value="MA">Massachusetts</option>
+							<option value="MI">Michigan</option>
+							<option value="MN">Minnesota</option>
+							<option value="MS">Mississippi</option>
+							<option value="MO">Missouri</option>
+							<option value="MT">Montana</option>
+							<option value="NE">Nebraska</option>
+							<option value="NV">Nevada</option>
+							<option value="NH">New Hampshire</option>
+							<option value="NJ">New Jersey</option>
+							<option value="NM">New Mexico</option>
+							<option value="NY">New York</option>
+							<option value="NC">North Carolina</option>
+							<option value="ND">North Dakota</option>
+							<option value="OH">Ohio</option>
+							<option value="OK">Oklahoma</option>
+							<option value="OR">Oregon</option>
+							<option value="PA">Pennsylvania</option>
+							<option value="RI">Rhode Island</option>
+							<option value="SC">South Carolina</option>
+							<option value="SD">South Dakota</option>
+							<option value="TN">Tennessee</option>
+							<option value="TX">Texas</option>
+							<option value="UT">Utah</option>
+							<option value="VT">Vermont</option>
+							<option value="VA">Virginia</option>
+							<option value="WA">Washington</option>
+							<option value="WV">West Virginia</option>
+							<option value="WI">Wisconsin</option>
+							<option value="WY">Wyoming</option>
+							<option value="AS">American Samoa</option>
+							<option value="GU">Guam</option>
+							<option value="MP">Northern Mariana Islands</option>
+							<option value="PR">Puerto Rico</option>
+							<option value="UM">United States Minor Outlying Islands</option>
+							<option value="VI">Virgin Islands</option>
+							<option value="AA">Armed Forces Americas</option>
+							<option value="AP">Armed Forces Pacific</option>
+							<option value="AE">Armed Forces Others</option>
+						</select>		
+		    </div>
+		    <div>
+		      <label>Zip Code:</label>
+		      <input type="text" name="zip">
 		    </div>
 		    <div>
 		      <label>Phone:</label>
 		      <input type="tel" name="phone">
 		    </div>
-	
 		    <div>
 		      <label>Qualification:</label>
 		      <select name="careertype">
@@ -49,6 +124,7 @@
 		        <option value="career">Health Coach</option>
 		        <option value="career">Clinical Dietitian</option>
 		        <option value="career">Holistic Nutritionist</option>
+		        <option value="career">Certified Personal Trainer</option>
 		      </select>
 		    </div>
 		    <div>
@@ -60,14 +136,14 @@
 		
 		  <fieldset>
 		    <div>
-			  	<textarea name="whycoach" rows="20" cols="200">Tell us why would you 	like to be a Food Feedback Coach?</textarea>
+			  	<textarea name="whycoach" rows="20" cols="200">Tell us why would you like to be a Food Feedback Coach?</textarea>
 			  </div>
 		
 			  <div>
-			  	<textarea name="pastexperience" rows="20" cols="200">What in your past 		experience should inspire us to hire you?</textarea>
+			  	<textarea name="pastexperience" rows="20" cols="200">What in your past experience should inspire us to hire you?</textarea>
 			  </div>
 			  <div>
-			  	<textarea name="crosscultural" rows="20" cols="200">Tell us about 	experiences you've had with cultures other than your own.</textarea>
+			  	<textarea name="crosscultural" rows="20" cols="200">Tell us about experiences you've had with cultures other than your own.</textarea>
 			  </div>
 			</fieldset>
 			<fieldset>
@@ -85,7 +161,11 @@
 		    	Show us a photo of one of your recent meals: <input type="file" name="		foodimg3">
 		  	</div>
 		  </fieldset>	
-		  <fieldset>	
+		  <fieldset>
+		  	<div>
+      			<input type="checkbox" name="iphone-yes" value="yes">
+      				I own an iphone5 or later.
+   			</div>	
 		    <div>
 		      <label>What date you can start:</label>
 		      <input type="date" name="date">
@@ -100,6 +180,7 @@
 		      	<input type="radio" name="felony" value="yes"> yes<br>
 		      	<input type="radio" name="felony" value="no"> no<br>
 		    </div>
+		    
 		  </fieldset>  
 		 	    <div>
 		  		<button type="submit">Save this application</button>
@@ -112,9 +193,12 @@
 		<a href="http://www.foodfeedback.com/">Here's a link to our website Food Feedback</a>	
 	</div>
 	<footer>
-		<img src="images/takeaphoto.jpg" alt="Take a Photo"> 
+		<img src="images/FF_brand.png" alt="Fod Feedback Logo"> 
 	</footer>
-
-
 </body>
 </html>
+
+
+
+    
+  
