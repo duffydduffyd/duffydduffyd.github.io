@@ -1,7 +1,35 @@
-body { background: #E5E5E5;
-			 font-family: "Arial";
-			 padding: 10px;
+body { 
+	background: #E5E5E5;
+	font-family: "Arial";
+  padding: 10px;
+  max-width: 74%;
 }
 
-h1 {	text-align: center; 	
+nav {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
 }
+
+h1 {	
+	text-align: center; 	
+}
+
+fieldset	{
+	background: #f9ebf2;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+header {
+	background-image: url("images/cover.png");
+	background-repeat: repeat-x;
+}  
+  
+
+
+  
+  
