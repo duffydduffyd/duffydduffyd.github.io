@@ -1,36 +1,102 @@
+
+header {
+  	background-image:url("images/cover.jpg");
+		background-repeat:repeat-x;
+}
+
 body { 
 	background: #E5E5E5;
 	font-family: "Arial";
-  padding: 10px;
-  max-width: 74%;
 }
 
 nav {
 	display: inline-block;
 	vertical-align: top;
-	width: 20%;
+	width: 15%;
+	padding-top: 5em;
+	background-color: #991D36;
+	height: 2200px;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #E5E5E5;
+  margin: 15px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+main {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 70%;
+	padding: 3px;
 }
 
 h1 {	
-	text-align: center; 	
+	text-align: center;
+	vertical-align: top; 	
+}
+
+h2 {
+	display: inline-block;
+	text-align: center;
+	vertical-align: right;
+	width: 70%;
 }
 
 fieldset	{
 	background: #f9ebf2;
 }
 
-@media screen and (max-width: 500px) {
-  h1 {
-    font-size: 1.5em;
+.formitem {
+	padding: 10px;
+}
+
+#apply_intro {
+	margin: 1em;
+}
+
+#button {
+	padding: 20px;
+	background: #858783;
+}
+
+article {
+	background: #858783;
+	text-align: center;
+	padding: 10px;
+}
+
+p {
+	margin: 1em;
+}
+
+table {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 70%;
+}
+
+table .oddcell
+	{background-color: white;
+}
+
+
+blockquote	{
+	font-family: "Helvetica";
+	display: inline-block;
+	vertical-align: right;
+	width: 70%
+}
+
+a:visited { color: green; }	
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 5px;
   }
-
-header {
-	background-image: url("images/cover.png");
-	background-repeat: repeat-x;
-
-}  
-  
-
-
-  
-  
+  h1 {
+  	background-color: green;
+  }
+ 
