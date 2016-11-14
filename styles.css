@@ -1,7 +1,9 @@
 
+/* UNIVERSAL */
 header {
   	background-image:url("images/cover.jpg");
 		background-repeat:repeat-x;
+		max-width: 1500px;
 }
 
 body { 
@@ -20,17 +22,19 @@ nav {
 
 nav ul {
   list-style-type: none;
-  background-color: #E5E5E5;
-  margin: 15px;
+  margin: 12px;
   padding-bottom: 12px;
   padding-top: 12px;
 }
 
-main {
-	display: inline-block;
-	vertical-align: top;
-	max-width: 70%;
-	padding: 3px;
+nav ul li {
+	padding-bottom: 15px;
+}
+
+nav ul li a {
+	font-size: 23px;
+	color:white;
+	text-decoration: none;
 }
 
 h1 {	
@@ -39,10 +43,27 @@ h1 {
 }
 
 h2 {
+	font-family: Menlo; 
 	display: inline-block;
 	text-align: center;
-	vertical-align: right;
 	width: 70%;
+
+}
+
+p {
+	margin: 1em;
+}
+
+a:visited {
+	color: green;
+}
+
+/* INDEX PAGE */
+main {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 70%;
+	padding: 3px;
 }
 
 fieldset	{
@@ -58,6 +79,10 @@ fieldset	{
 	padding: 5px;
 }
 
+#apply_intro:hover { 
+	background: gold; 
+}
+
 #button {
 	padding: 20px;
 	background: #858783;
@@ -69,8 +94,12 @@ article {
 	padding: 10px;
 }
 
-p {
-	margin: 1em;
+/* INDEPTH PAGE */
+
+#pay {
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
 }
 
 table {
@@ -79,29 +108,72 @@ table {
 	max-width: 70%;
 }
 
-table .oddcell
-	{background-color: white;
+table .oddcell {
+	background-color: white;
 }
 
-#apply_intro:hover { 
-	background: gold; 
+/* ABOUT PAGE */
 
+#about-page {
+ 	display: inline-block;
+	text-align: center;
+	background-color: beige;
+	width: 40%;
+}
+
+#about-page div ul {
+	list-style: none;
+}
+
+#about-page div ol {
+	list-style: none;
 }
 
 blockquote	{
-	font-family: "Helvetica";
 	display: inline-block;
-	vertical-align: right;
 	width: 70%
 }
 
-a:visited { color: green; }	
+#screenshots-1 {
+	vertical-align: top;
+	display: inline-block;
+	width: 29%;
+	padding: .5em
+}
 
+#screenshots-1 img {
+	padding: .5em
+}
+
+
+
+/* RESPONSIVE DESIGN */
 @media screen and (max-width: 400px) {
   body {
     font-size: .5em;
   }
+}
+
+@media screen and (max-width: 400px) {
   h1 {
   	background-color: green;
   }
- 
+}
+
+@media screen and (max-width: 400px) {
+  #pay {
+  	font-size: .5em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav ul li a {
+   	font-size: 10px;
+   	margin: 1px;
+  	padding-bottom: 1px;
+  	padding-top: 1px;
+  }
+}        
+
+
+
